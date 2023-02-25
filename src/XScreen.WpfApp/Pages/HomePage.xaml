@@ -9,6 +9,8 @@
       Title="HomePage">
 
     <Grid>
-        <Label>111111111111111111</Label>
+        <Label>111</Label>
+        <StackPanel x:Name="SPScreenItems" Orientation="Vertical" Background="Bisque">
+        </StackPanel>
     </Grid>
 </Page>

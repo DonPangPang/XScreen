@@ -13,11 +13,8 @@ public static class GlobalLoader
 
     public static Window MainWindow { get; set; } = null!;
 
-    public static Dictionary<string, Frame> Pages = new Dictionary<string, Frame>()
-    {
-        ["Home"] = new Frame() { Content = new HomePage() },
-        ["Setting"] = new Frame() { Content = new SettingPage() }
-    };
+    public static HomePage HomePage { get; set; } = null!;
+    public static SettingPage SettingPage { get; set; } = null!;
 
     public static void Instance(IServiceProvider serviceProvider)
     {

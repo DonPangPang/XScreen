@@ -12,16 +12,15 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using XScreen.WpfApp.Components;
 
-namespace XScreen.WpfApp.Pages
+namespace XScreen.WpfApp.Components
 {
     /// <summary>
-    /// HomePage.xaml 的交互逻辑
+    /// ScreenItem.xaml 的交互逻辑
     /// </summary>
-    public partial class HomePage : Page
+    public partial class ScreenItem : UserControl
     {
-        public HomePage()
+        public ScreenItem()
         {
             InitializeComponent();
         }
