@@ -103,13 +103,13 @@ namespace XScreen.WpfApp
         private void Btn_Page_Select_Home(object sender, MouseButtonEventArgs e)
         {
             FrameBox.Content = GlobalLoader.Pages.FirstOrDefault(x => x.Key == "Home").Value;
-            LbTitle.Content = "主页";
+            //LbTitle.Content = "主页";
         }
 
         private void Btn_Page_Select_Setting(object sender, MouseButtonEventArgs e)
         {
             FrameBox.Content = GlobalLoader.Pages.FirstOrDefault(x => x.Key == "Setting").Value;
-            LbTitle.Content = "设置";
+            //LbTitle.Content = "设置";
         }
     }
 }
