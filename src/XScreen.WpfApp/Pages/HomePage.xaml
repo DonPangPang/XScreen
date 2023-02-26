@@ -7,10 +7,21 @@
       mc:Ignorable="d"
       d:DesignHeight="450" d:DesignWidth="800"
       Title="HomePage">
-
+    <Page.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="/Styles/ScrollViewDictionary.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Page.Resources>
     <Grid>
-        <Label>111</Label>
-        <StackPanel x:Name="SPScreenItems" Orientation="Vertical" Background="Bisque">
-        </StackPanel>
+        <ScrollViewer x:Name="SVScroll" Template="{StaticResource MyScrollViewer}"
+                      VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Hidden" Height="350">
+            <ScrollViewer.Content>
+                <StackPanel x:Name="SPScreenItems"
+                            Orientation="Vertical" Background="Bisque">
+                </StackPanel>
+            </ScrollViewer.Content>
+        </ScrollViewer>
     </Grid>
 </Page>

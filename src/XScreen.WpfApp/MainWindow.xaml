@@ -6,8 +6,11 @@
         xmlns:local="clr-namespace:XScreen.WpfApp"
         xmlns:components="clr-namespace:XScreen.WpfApp.Components"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" MouseDown="MainWindow_OnMouseDown" ResizeMode="NoResize" Background="Transparent">
-    <Border CornerRadius="15" Background="White">
+        Title="MainWindow" Height="460" Width="810" WindowStyle="None" AllowsTransparency="True" WindowStartupLocation="CenterScreen" MouseDown="MainWindow_OnMouseDown" ResizeMode="NoResize" Background="Transparent">
+    <Border CornerRadius="10" Background="White" Margin="5">
+        <Border.Effect>
+            <DropShadowEffect Color="Gray" ShadowDepth="0" BlurRadius="5" Opacity="0.5" Direction="0" />
+        </Border.Effect>
         <Grid Background="Transparent">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="300" />

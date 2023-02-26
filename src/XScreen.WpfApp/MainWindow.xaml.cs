@@ -38,6 +38,11 @@ namespace XScreen.WpfApp
             GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
             GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
             GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
+            GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
+            GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
+            GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
+            GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
+            GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
         }
 
         private void Btn_MouseMoveIn(object sender, MouseEventArgs e)
@@ -123,16 +128,16 @@ namespace XScreen.WpfApp
 
         private void BtnSetting_OnClick(object sender, MouseButtonEventArgs e)
         {
-            if (Width >= 800)
+            if (Width >= 810)
             {
-                while (Width > 300)
+                while (Width > 310)
                 {
                     Width -= 2;
                 }
             }
             else
             {
-                while (Width < 800)
+                while (Width < 810)
                 {
                     Width += 2;
                 }
