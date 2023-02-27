@@ -24,5 +24,39 @@ namespace XScreen.WpfApp.Components
         {
             InitializeComponent();
         }
+
+        private void Btn_MouseMoveIn(object sender, MouseEventArgs e)
+        {
+            if (e.Source == BtnSetting)
+            {
+                ((Border)e.Source).Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#f6bd60"));
+                return;
+            }
+
+            if (e.Source == BtnExit)
+            {
+                ((Border)e.Source).Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#f28482"));
+                return;
+            }
+
+            ((Border)e.Source).Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#A0EEE1"));
+        }
+
+        private void Btn_MouseMoveOut(object sender, MouseEventArgs e)
+        {
+            if (Equals(e.Source, BtnSetting))
+            {
+                ((Border)e.Source).Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF9900"));
+                return;
+            }
+
+            if (Equals(e.Source, BtnExit))
+            {
+                ((Border)e.Source).Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#F4606C"));
+                return;
+            }
+
+            ((Border)e.Source).Background = new SolidColorBrush(Colors.Transparent);
+        }
     }
 }
