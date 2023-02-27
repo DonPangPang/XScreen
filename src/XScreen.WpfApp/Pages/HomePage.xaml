@@ -19,7 +19,7 @@
                       VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Hidden" Height="350">
             <ScrollViewer.Content>
                 <StackPanel x:Name="SPScreenItems"
-                            Orientation="Vertical" Background="Bisque">
+                            Orientation="Vertical">
                 </StackPanel>
             </ScrollViewer.Content>
         </ScrollViewer>
