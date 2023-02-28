@@ -126,20 +126,20 @@ namespace XScreen.WpfApp
             //LbTitle.Content = "设置";
         }
 
-        private void BtnSetting_OnClick(object sender, MouseButtonEventArgs e)
+        private async void BtnSetting_OnClick(object sender, MouseButtonEventArgs e)
         {
             if (Width >= 810)
             {
                 while (Width > 310)
                 {
-                    Width -= 2;
+                    Width -= 10;
                 }
             }
             else
             {
                 while (Width < 810)
                 {
-                    Width += 2;
+                    Width += 10;
                 }
             }
         }

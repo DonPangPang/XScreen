@@ -33,7 +33,7 @@ namespace XScreen.WpfApp.Components
                 return;
             }
 
-            if (e.Source == BtnExit)
+            if (e.Source == BtnDrop)
             {
                 ((Border)e.Source).Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#f28482"));
                 return;
@@ -50,13 +50,18 @@ namespace XScreen.WpfApp.Components
                 return;
             }
 
-            if (Equals(e.Source, BtnExit))
+            if (Equals(e.Source, BtnDrop))
             {
                 ((Border)e.Source).Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#F4606C"));
                 return;
             }
 
             ((Border)e.Source).Background = new SolidColorBrush(Colors.Transparent);
+        }
+
+        private void BtnDrop_OnClick(object sender, MouseButtonEventArgs e)
+        {
+            GlobalLoader.HomePage.SPScreenItems.Children.Remove(this);
         }
     }
 }
