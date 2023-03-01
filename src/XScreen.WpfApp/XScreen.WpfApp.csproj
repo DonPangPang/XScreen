@@ -9,6 +9,12 @@
 
   <ItemGroup>
     <None Remove="Images\1.jpg" />
+    <None Remove="Images\pin.png" />
+    <None Remove="Images\pin.svg" />
+    <None Remove="Images\trash.png" />
+    <None Remove="Images\trash.svg" />
+    <None Remove="Images\unpin.png" />
+    <None Remove="Images\unpin.svg" />
     <None Remove="Resources\Icon.ico" />
     <None Remove="Resources\Icon_16.ico" />
   </ItemGroup>
@@ -24,7 +30,21 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="Images\1.jpg" />
+    <Resource Include="Images\1.jpg">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\pin.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\pin.svg" />
+    <Resource Include="Images\trash.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\trash.svg" />
+    <Resource Include="Images\unpin.png">
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Images\unpin.svg" />
     <Resource Include="Resources\Icon.ico" />
     <Resource Include="Resources\Icon_16.ico" />
   </ItemGroup>

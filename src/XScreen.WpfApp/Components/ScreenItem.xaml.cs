@@ -20,48 +20,55 @@ namespace XScreen.WpfApp.Components
     /// </summary>
     public partial class ScreenItem : UserControl
     {
+        public Guid Id { get; set; } = Guid.NewGuid();
+        public bool IsPin { get; set; } = false;
+        public DateTime CreateTime { get; set; } = DateTime.Now;
+
         public ScreenItem()
         {
             InitializeComponent();
+
+            Label.Content = GlobalLoader.Index++;
+
+            InitPin();
         }
 
         private void Btn_MouseMoveIn(object sender, MouseEventArgs e)
         {
-            if (e.Source == BtnSetting)
-            {
-                ((Border)e.Source).Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#f6bd60"));
-                return;
-            }
-
-            if (e.Source == BtnDrop)
-            {
-                ((Border)e.Source).Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#f28482"));
-                return;
-            }
-
-            ((Border)e.Source).Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#A0EEE1"));
+            ((Border)e.Source).Background = new SolidColorBrush(Colors.WhiteSmoke);
         }
 
         private void Btn_MouseMoveOut(object sender, MouseEventArgs e)
         {
-            if (Equals(e.Source, BtnSetting))
-            {
-                ((Border)e.Source).Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FF9900"));
-                return;
-            }
-
-            if (Equals(e.Source, BtnDrop))
-            {
-                ((Border)e.Source).Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#F4606C"));
-                return;
-            }
-
-            ((Border)e.Source).Background = new SolidColorBrush(Colors.Transparent);
+            ((Border)e.Source).Background = new SolidColorBrush(Colors.White);
         }
 
         private void BtnDrop_OnClick(object sender, MouseButtonEventArgs e)
         {
             GlobalLoader.HomePage.SPScreenItems.Children.Remove(this);
+        }
+
+        private void BtnPin_OnClick(object sender, MouseButtonEventArgs e)
+        {
+            IsPin = !IsPin;
+
+            InitPin();
+
+            GlobalLoader.HomePage.Sort();
+        }
+
+        private void InitPin()
+        {
+            if (IsPin)
+            {
+                var newImg = new BitmapImage(new Uri("../Images/pin.png", UriKind.Relative));
+                BtnPinImage.Source = newImg;
+            }
+            else
+            {
+                var newImg = new BitmapImage(new Uri("../Images/unpin.png", UriKind.Relative));
+                BtnPinImage.Source = newImg;
+            }
         }
     }
 }

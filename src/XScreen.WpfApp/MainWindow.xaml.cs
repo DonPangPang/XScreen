@@ -33,16 +33,16 @@ namespace XScreen.WpfApp
             GlobalLoader.SettingPage = new SettingPage();
             FrameBox.Content = new Frame() { Content = GlobalLoader.HomePage };
 
-            GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
-            GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
-            GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
-            GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
-            GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
-            GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
-            GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
-            GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
-            GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
-            GlobalLoader.HomePage.SPScreenItems.Children.Add(new ScreenItem());
+            GlobalLoader.HomePage.AddScreenItem(new ScreenItem());
+            GlobalLoader.HomePage.AddScreenItem(new ScreenItem());
+            GlobalLoader.HomePage.AddScreenItem(new ScreenItem());
+            GlobalLoader.HomePage.AddScreenItem(new ScreenItem());
+            GlobalLoader.HomePage.AddScreenItem(new ScreenItem());
+            GlobalLoader.HomePage.AddScreenItem(new ScreenItem());
+            GlobalLoader.HomePage.AddScreenItem(new ScreenItem());
+            GlobalLoader.HomePage.AddScreenItem(new ScreenItem());
+            GlobalLoader.HomePage.AddScreenItem(new ScreenItem());
+            GlobalLoader.HomePage.AddScreenItem(new ScreenItem());
         }
 
         private void Btn_MouseMoveIn(object sender, MouseEventArgs e)

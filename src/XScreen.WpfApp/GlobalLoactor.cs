@@ -25,4 +25,6 @@ public static class GlobalLoader
     {
         return _serviceProvider.GetService<T>()!;
     }
+
+    public static int Index { get; set; } = 0;
 }

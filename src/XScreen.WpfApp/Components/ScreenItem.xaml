@@ -18,18 +18,20 @@
             <Grid>
                 <StackPanel Orientation="Horizontal">
                     <Image Height="60" Source="../Images/1.jpg" Margin="10,10,0,10" Grid.ColumnSpan="2"></Image>
+                    <Label x:Name="Label"></Label>
                 </StackPanel>
             </Grid>
             <Grid Column="1">
                 <StackPanel>
-                    <Border x:Name="BtnDrop" Height="30" Width="30" Background="#F4606C" Margin="0,5,0,0"
+                    <Border x:Name="BtnDrop" Height="30" Width="30" Background="White" Margin="0,5,0,0"
                             CornerRadius="5" MouseEnter="Btn_MouseMoveIn" MouseLeave="Btn_MouseMoveOut"
                             MouseLeftButtonDown="BtnDrop_OnClick">
-                        <Label Foreground="White"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center">X</Label>
+                        <Image Source="../Images/trash.png" Margin="5"></Image>
                     </Border>
-                    <Border x:Name="BtnSetting" Height="30" Width="30" Background="#FF9900" Margin="0,10,0,0"
-                            CornerRadius="5" MouseEnter="Btn_MouseMoveIn" MouseLeave="Btn_MouseMoveOut">
-                        <Label Foreground="White"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center">C</Label>
+                    <Border x:Name="BtnPin" Height="30" Width="30" Background="White" Margin="0,10,0,0"
+                            CornerRadius="5" MouseEnter="Btn_MouseMoveIn" MouseLeave="Btn_MouseMoveOut"
+                            MouseLeftButtonDown="BtnPin_OnClick">
+                        <Image x:Name="BtnPinImage" Source="../Images/unpin.png" Margin="8"></Image>
                     </Border>
                 </StackPanel>
             </Grid>
