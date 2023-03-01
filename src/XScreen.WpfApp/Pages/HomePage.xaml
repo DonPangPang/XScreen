@@ -15,7 +15,7 @@
         </ResourceDictionary>
     </Page.Resources>
     <Grid>
-        <ScrollViewer x:Name="SVScroll" Template="{StaticResource MyScrollViewer}"
+        <ScrollViewer x:Name="SVScroll" Template="{StaticResource MyScrollViewer}" Padding="0,0,0,0"
                       VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Hidden" Height="350">
             <ScrollViewer.Content>
                 <StackPanel x:Name="SPScreenItems"

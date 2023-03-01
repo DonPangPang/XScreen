@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:XScreen.WpfApp.Components"
              mc:Ignorable="d"
              d:DesignHeight="80" d:DesignWidth="800" Background="Transparent">
-    <Border CornerRadius="10" Background="White" Margin="5" Height="80">
+    <Border CornerRadius="5" Background="White" Margin="5" Height="80">
         <Border.Effect>
             <DropShadowEffect Color="Gray" ShadowDepth="0" BlurRadius="5" Opacity="0.5" Direction="0" />
         </Border.Effect>
