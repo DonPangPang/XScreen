@@ -46,7 +46,7 @@
                                 <Border x:Name="BtnSetting" Height="30" Width="30" Background="#FF9900" Margin="0,10,0,0"
                                     MouseLeftButtonDown="BtnSetting_OnClick"
                                     CornerRadius="5" MouseEnter="Btn_MouseMoveIn" MouseLeave="Btn_MouseMoveOut">
-                                    <Label Foreground="White"  HorizontalContentAlignment="Center" VerticalContentAlignment="Center">S</Label>
+                                    <Image x:Name="BtnSettingPanel" Margin="8" Source="../Images/right.png"></Image>
                                 </Border>
                             </StackPanel>
                         </Grid>

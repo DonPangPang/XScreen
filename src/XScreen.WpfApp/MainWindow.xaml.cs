@@ -134,6 +134,9 @@ namespace XScreen.WpfApp
                 {
                     Width -= 10;
                 }
+
+                var newImg = new BitmapImage(new Uri("../Images/left.png", UriKind.Relative));
+                BtnSettingPanel.Source = newImg;
             }
             else
             {
@@ -141,6 +144,9 @@ namespace XScreen.WpfApp
                 {
                     Width += 10;
                 }
+
+                var newImg = new BitmapImage(new Uri("../Images/right.png", UriKind.Relative));
+                BtnSettingPanel.Source = newImg;
             }
         }
     }

@@ -9,8 +9,10 @@
 
   <ItemGroup>
     <None Remove="Images\1.jpg" />
+    <None Remove="Images\left.png" />
     <None Remove="Images\pin.png" />
     <None Remove="Images\pin.svg" />
+    <None Remove="Images\right.png" />
     <None Remove="Images\trash.png" />
     <None Remove="Images\trash.svg" />
     <None Remove="Images\unpin.png" />
@@ -33,10 +35,12 @@
     <Resource Include="Images\1.jpg">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
+    <Resource Include="Images\left.png" />
     <Resource Include="Images\pin.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
     <Resource Include="Images\pin.svg" />
+    <Resource Include="Images\right.png" />
     <Resource Include="Images\trash.png">
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>
     </Resource>
