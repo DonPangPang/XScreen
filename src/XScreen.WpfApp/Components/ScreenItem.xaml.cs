@@ -70,5 +70,10 @@ namespace XScreen.WpfApp.Components
                 BtnPinImage.Source = newImg;
             }
         }
+
+        private void ScreenItemOnClick(object sender, MouseButtonEventArgs e)
+        {
+            new ImageViewer().ShowDialog();
+        }
     }
 }
