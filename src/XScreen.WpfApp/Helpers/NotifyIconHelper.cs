@@ -1,6 +1,6 @@
-﻿using System;
+﻿using ReactiveUI;
+using System;
 using System.Windows;
-using ReactiveUI;
 using XScreen.WpfApp.Properties;
 
 namespace XScreen.WpfApp.Helpers;
