@@ -18,7 +18,7 @@ public static class NotifyIconHelper
     /// <param name="exit">       </param>
     public static void Init(NotifyIcon notifyIcon, Action? exit)
     {
-        notifyIcon.Text = "My Notify Icon";
+        notifyIcon.Text = "XScreen";
         notifyIcon.Icon = Icon;
         var typeUNUserNotificationCenter = Type.GetType("UserNotifications.UNUserNotificationCenter, Xamarin.Mac");
 

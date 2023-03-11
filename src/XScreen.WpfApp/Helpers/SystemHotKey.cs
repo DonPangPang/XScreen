@@ -1,6 +1,6 @@
-﻿using System.Runtime.InteropServices;
+﻿using System;
+using System.Runtime.InteropServices;
 using System.Windows.Input;
-using System;
 
 namespace XScreen.WpfApp.Helpers;
 
