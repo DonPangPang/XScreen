@@ -58,7 +58,26 @@
                     </Grid>
                 </Grid>
             </Grid>
-            <Grid Column="1" x:Name="GMoreMenu"></Grid>
+            <Grid Column="1" x:Name="GMoreMenu">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition Width="120" />
+                </Grid.ColumnDefinitions>
+                <Grid></Grid>
+                <Grid Column="1">
+                    <StackPanel Orientation="Vertical">
+                        <Label>1</Label>
+                        <Label>1</Label>
+                        <Label>1</Label>
+                        <Label>1</Label>
+                        <Label>1</Label>
+                        <Label>1</Label>
+                        <Label>1</Label>
+                        <Label>1</Label>
+                        <Label>1</Label>
+                    </StackPanel>
+                </Grid>
+            </Grid>
         </Grid>
     </Border>
 </Window>
